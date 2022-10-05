@@ -9,6 +9,13 @@ package com.purelambda.patternmatching
  */
 object Example01_Single {
   def main(args: Array[String]): Unit = {
-    val a: String = ""
+    val a: Int = 123
+
+    a match {
+      case 2     => println("we found a")
+      case 123   => println("we found 123")
+      case value => println(s"Error, we dont know how to deal with : $value")
+//      case "hello" => println("we found hello")
+    }
   }
 }

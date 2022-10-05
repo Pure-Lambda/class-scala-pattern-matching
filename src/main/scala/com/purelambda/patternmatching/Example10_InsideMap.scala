@@ -6,7 +6,9 @@ object Example10_InsideMap {
     val l: List[String] = List("abc", "bar", "foo", "hello", "world")
 
     l.map {
-      ???
-    }
+        case "abc" => "s"
+        case s     => s"${s.length}"
+      }
+      .foreach(println(_))
   }
 }
